@@ -1,3 +1,18 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <p>TestModule Component</p>
+  <div>
+    <label>Counter Value: </label> <span>{{counter}}</span>
+  </div>
+
+  <div>
+    <label>moduleObject primitive Counter Value: </label> <span>{{moduleObject.counter}}</span>
+    <button (click)="onClickCounter()">Inc Counter</button>
+  </div>
+
+  <div><label>CounterObject Value: </label> <span>{{counterObject.value}}</span>
+    <button (click)="onClickCounterObject()">Inc Counter Object</button>
+  </div>
+</div>
