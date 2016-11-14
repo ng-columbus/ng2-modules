@@ -3,15 +3,17 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
 import {TeamModule} from "./team/team.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    TeamModule,
 
-    // importing TeamModule makes its exports and providers items available
-    TeamModule
+    // Bring in the routing module
+    AppRoutingModule
   ],
 
   declarations: [
