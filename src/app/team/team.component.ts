@@ -5,8 +5,7 @@ import {TeamService} from "./team.service";
 @Component({
   selector: 'ngc-team',
   templateUrl: './team.component.html',
-  styleUrls: ['./team.component.css'],
-  providers: [TeamService]
+  styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
   teams: Array<Team>;
