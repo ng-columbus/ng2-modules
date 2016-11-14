@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Team} from './team';
 import {TeamService} from "./team.service";
+import {SharedService} from "../shared/shared.service";
 
 @Component({
   selector: 'ngc-team',
@@ -16,7 +17,10 @@ export class TeamComponent implements OnInit {
    * Inject teamService into this component
    * @param teamService
    */
-  constructor(private teamService: TeamService) { }
+  constructor(private teamService: TeamService, private sharedService: SharedService) {
+    console.log('injected sharedService into TeamComponent', this.sharedService)
+
+  }
 
   ngOnInit() {
     this.teams = this.teamService.getTeams();

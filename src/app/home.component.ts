@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-// import {TeamService} from "./team/team.service";
+import {SharedService} from "./shared/shared.service";
 
 @Component({
   selector: 'ngc-home',
@@ -12,12 +12,11 @@ import {Component} from '@angular/core';
 export class HomeComponent {
 
   /**
-   * Note below that even though the AppModule didn't declare TeamService a provider, it is
-   * available from the root injector
+   * SharedService is available from the SharedModule
    */
-  // constructor(private teamService: TeamService) {
-  //   console.log('constructing HomeComponent, injecting teamService', this.teamService);
-  // }
+  constructor(private sharedService: SharedService) {
+    console.log('constructing HomeComponent, injecting sharedService', this.sharedService);
+  }
 
 
 }

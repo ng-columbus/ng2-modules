@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-// import {TeamModule} from "./team/team.module";
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    // TeamModule,
+    SharedModule.forRoot(),
 
     // Bring in the routing module
     AppRoutingModule
