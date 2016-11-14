@@ -7,6 +7,12 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+
+  {
+    path: 'team',
+    loadChildren: 'app/team/team.module#TeamModule'
+  },
+
   {
     path: 'home',
     component: HomeComponent
