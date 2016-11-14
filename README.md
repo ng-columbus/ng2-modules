@@ -2,30 +2,20 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.19-3.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
+This project is used for the [November, 2016 ng-columbus meetup.](https://www.meetup.com/ng-columbus/events/233156792/) 
+The corresponding presentation slides for this project can be found here:  [ng2-modules slides](http://slides.com/tomacree-1/ng2-modules) 
 
-## Code scaffolding
+This presentation discusses angular2 NgModule usages and patterns as well as a brief example of how to use es2015 
+Typescript modules for import and export.  This project is quite contrived and is meant solely to focus on the essentials
+of getting modules to work.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+## Branches
+The branches in the project correspond to the incrementally built application.  The master branch contains the final
+version of the application.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Resources
+I highly recommend the angular.io site and their heroes sample application.  They cover these concepts in fairly complete
+depth.  Other excellent resources include the following:
+  * http://blog.angular-university.io/angular2-ngmodule/
+  * https://angular.io/docs/ts/latest/guide/ngmodule.html
